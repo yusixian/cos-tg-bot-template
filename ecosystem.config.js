@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'cosine-pic-bot',
+      name: 'cosine-tg-bot-template',
       script: 'pnpm start',
       instances: 1,
     },
