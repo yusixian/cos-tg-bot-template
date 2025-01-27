@@ -1,10 +1,10 @@
-# cosine-pic-bot
+# cos-tg-bot-template
 
-从 [SomeACG/cosine-pic-bot](https://github.com/SomeACG/cosine-pic-bot) 抽离而来的template 保留了一些开发 bot 需要的通用配置和依赖，可以按需去掉
+从 [SomeACG/cosine-pic-bot](https://github.com/SomeACG/cosine-pic-bot) 抽离而来的 template 保留了一些开发 bot 需要的通用配置和依赖，可以按需去掉
 
 - 使用 [grammy](https://grammy.dev/) 调用 telegram api
 - 使用 pino 进行日志记录
-- 使用 prisma + SQLite进行数据库操作
+- 使用 prisma + SQLite 进行数据库操作
 - 使用 [@aws-sdk/client-s3](https://github.com/aws-sdk-js-v3/aws-sdk-js-v3/tree/main/packages/client-s3) 进行 SQLite 数据库 S3 备份（可选）
 
 ## 开发步骤
@@ -28,7 +28,8 @@ pnpm pm2:restart # pm2 restart ecosystem.config.js
 pnpm pm2:log # pm2 log ecosystem.config.js
 ```
 
-.env.example 复制一份变成 .env，填入自己的环境变量
+.env.example 复制一份重命名为 .env
+填入自己 bot 的环境变量
 
 ```bash
 BOT_TOKEN=                  # TG 机器人token
